@@ -146,7 +146,7 @@ Both scripts follow the same steps and print every change they make:
 
 ## Package versions
 
-**Python** (`python:3.11-slim` image): numpy 1.26.4, pandas 2.2.2, scikit-learn 1.5.1
+**Python** (`python:3.11-slim` image): numpy 1.26.4, pandas 2.2.2, scikit-learn 1.5.1, plus their sub-dependencies (scipy, joblib, threadpoolctl, python-dateutil, pytz, tzdata, six), all pinned in `src/python_app/requirements.txt`
 
 **R** (`rocker/r-ver:4.4.1` image): dplyr 1.1.4, readr 2.1.5 (logistic regression uses base R `glm`)
 
